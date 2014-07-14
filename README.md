@@ -6,7 +6,7 @@ A presentation tool for showing web design mockups to clients, in a browser.
 
 Notice the navigation at the bottom right of the screenshot.
 
-[View a demo here](http://www.samplify.be/mckp/), with two mockups.
+[View a demo here](http://www.samplify.be/mckp/), with two mockup images.
 
 Technically, it is just a html file (a template to adapt and reuse), linked to some css and javascript. In this html file, you can add your images (your mockups), all in one page. Then, thanks to some javascript and css, the user/client will only see one image at the time, and have a horizontal navigation bar at the bottom of the browser window where he will be able to click to the next or previous image, and see a little counter. Like a simple image slideshow, full screen.
 
