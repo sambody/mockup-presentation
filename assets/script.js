@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	// --------------------------------------------------
 	
-	// Infinite slides (last page leads back to first one when clicking button Next): 
+	// Infinite slides (looping - last page leads back to first one when clicking button Next): 
 	// Set to true or false
 	var infinite = true;
 
