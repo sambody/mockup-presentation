@@ -10,7 +10,7 @@ Notice the navigation at the bottom right of the screenshot.
 
 Technically, it is just a html file (a template to adapt and reuse), linked to some css and javascript. In this html file, you can add your images (your mockups), all in one page. Then, thanks to some javascript and css, the user/client will only see one image at the time, and have a horizontal navigation bar at the bottom of the browser window where he will be able to click to the next or previous image, and see a little counter. Like a simple image slideshow, full screen.
 
-To use it, you need to be familiar with html/css code, and ftp software to upload it.
+To use it, you need to be familiar with html/css code.
 
 ### Why use it
 
@@ -22,21 +22,20 @@ To use it, you need to be familiar with html/css code, and ftp software to uploa
 
 It could complement other presentation tools like [style tiles](http://styletil.es/), responsive html wireframes, etc.
 
-It is a simple tool - no online cms, no passwords, no team management, no online comment system, etc. No special transition effects. It's just a kind of full screen image slider, really.
+It is a simple tool - no online cms, no passwords, no team management, no online comment system, etc. No special transition effects.
 
 ### How to use it
 
 - Download it
-- In the downloaded folder, put your web design mockups (as jpg or png), in the same folder as the index.html file.
+- In the downloaded folder, on the same level as index.html, put your web design mockups (as jpg or png).
 - Open index.html in a text editor - you will find more detailed instructions as comments in the source code.
-- Copy some code (a containing div for each image/mockup)
-- For each div, adapt the ID of the div, insert your image into the div, and (optionally) set a background color and/or image.
-- Test the page in your browser. Adapt if needed.
-- When ready, upload the whole folder on your server, and send the link to the page to your client.
+- Add your images inside div#content (inline images, not background images)
+- (optionally) Set a background color and/or image to each parent div.
+- That's it !
 
-Alternatively, you could also set each image as a background image in each div (as inline style), instead of as an inline image. But then you also have to add a height to the div, corresponding to your mockup image.
+Test the page in your browser. Adapt if needed. When ready, upload the whole folder on your server via ftp, and send the link to the page to your client.
 
-Your client, when viewing your page, will see the first mockup in the browser, at full scale, and have the ability to click to the next / previous mockup with a navigation bar at the bottom of the screen.
+Your client, when viewing your page, will see the first mockup in the browser, at full scale, and have the ability to click to the next / previous mockup.
 
 You are free to use it, customize it, make it your own.
 
@@ -48,11 +47,10 @@ Many thanks to Ross for allowing me to customize and build on it.
 
 With the overall structure and  jquery magic already in place, I have made the following changes:
 
-- changed the overall appearance of the navigation bar and buttons, and moved it to the bottom to be less intrusive and let the mockup itself be more prominent;
-- removed the logo and home button;
+- changed the content and appearance of the navigation bar, and moved it to the bottom to be less intrusive;
 - changed the behavior of the prev/next buttons slightly - the last mockup leads to the first and vice versa (this infinite looping can be undone by changing the variable "infinite" to "false" in the javascript)
-- added the ability to add images inline in the page, rather than setting them as background images, so that you don't need to add the height for every image (they are still centered, even when they are larger than the browser window, with no horizontal scrollbar...)
--  etc.
+- Inline images instead of background images - no need to add height manually. Parent divs around the images are injected automatically with jquery. All centered without horizontal scrollbar, even when wider than the browser screen.
+- Changed to html5 doc type, moved css and js to external files, etc.
 
 That's it, for now.
 
@@ -65,7 +63,7 @@ I want to keep this a simple tool, but I think the following things would be use
 - change the browser url when clicking next / prev, so that a specific url/image can be bookmarked and/or sent...
 - ... and then when reaching that url, one would directly see that particular image (all this as an option)
 - abililty to see all images at once as clickable thumbnails (shouldn't be too hard if the images are already in the page)
-- Let jquery build the divs surrounding the images automatically on page load (including setting the incrementing ids)
-- A script (python?) that takes all the images in a folder, and builds the mockup presentation, like other static gallery generators.
+- ~~Let jquery build the divs surrounding the images automatically on page load~~ Done
+- A script (python?) that takes all the images in a folder, and builds the mockup presentation, like other static gallery generators. May not be worth the effort...
 
 I'm no jquery wizard, so we'll see. Maybe with a little help of ... you ? 

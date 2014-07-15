@@ -2,15 +2,21 @@ $(document).ready(function() {
 
 	// --------------------------------------------------
 	
-	// Infinite slides (looping - last page leads back to first one when clicking button Next): 
-	// Set to true or false
-	var infinite = true;
+	// Infinite looping - last image leads back to first one and vice versa: 
+	var infinite = true;		// Set to true or false
 
 	// --------------------------------------------------
 
 	var Counter = 1; 
-	var NumberMockups = $('.section').size();
+	var NumberMockups = $('#content img').length;
 	$('.total-mockups').html(NumberMockups);
+
+	// Build the divs around the images
+	var ItemNum = 1;
+	$('#content img').each(function() {
+		$(this).wrap('<div id="mockup-' + ItemNum + '" class="section"></div>');
+		ItemNum++;
+	});
 	
 	// Show first section (hidden by css)
 	$('.section:first').addClass('active');

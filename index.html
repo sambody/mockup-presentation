@@ -6,7 +6,16 @@
 
 	<title>YourProjectNameHere - Version 11</title>	
 
-	<link rel="stylesheet" href="assets/styles.css">	
+	<link rel="stylesheet" href="assets/styles.css">
+	<style type="text/css">
+
+		/* Wrapping divs around mockup img - add background color/image if necessary */
+		.section {}
+		#mockup-1 {}
+		#mockup-2 {}
+		#mockup-3 {}
+
+	</style>
 </head>
 <body>	
 
@@ -20,24 +29,28 @@
 	<div id="content">
 
 		<!-- 
+
 			INSTRUCTIONS:
 
-			In the html head title, and in the navigation bar, change "YourProjectNameHere" and adapt the version number "11"
-			Copy div.section below, then, for each copy:
-			- increment number (mockup-2, mockup-3 etc)
-			- add image inside div.section
-			- (optional) add background color/image as inline style
+			1. In the html head title AND in the navigation bar, change "YourProjectNameHere" and adapt the version number "11"
+			2. Add all mockup images below, inside div#content. Jquery will wrap each image in div#mockup-[i].section
 
-			<div id="mockup-1" class="section" style="">img</div>
-		 -->
+					EXAMPLE:
+					<img src="projectmockup-first.png">
+					<img src="projectmockup-second.png">
 
+					Will result in :
+					<div id="mockup-1" class="section"><img src="projectmockup-first.png"></div>
+					<div id="mockup-2" class="section"><img src="projectmockup-second.png"></div> 
 
+			3. (optional) In the page styles (top of html page), add background color/image to #mockup-1, #mockup-2 etc or .section
+			4. Test the page in a browser. Bingo !
 
-		 	<!-- Example :  -->
-			<div id="mockup-1" class="section" style=""><img src="mockup1.png"></div>
-			<div id="mockup-2" class="section" style=""><img src="mockup2.png"></div>
-			<!-- End example -->
+		-->
 
+			<!-- Your images here - remove and add your own -->
+			<img src="mockup1.png">
+			<img src="mockup2.png">
 	
 	</div>
 
