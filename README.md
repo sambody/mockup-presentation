@@ -47,9 +47,9 @@ Many thanks to Ross for allowing me to customize and build on it.
 
 With the overall structure and  jquery magic already in place, I have made the following changes:
 
-- changed the content and appearance of the navigation bar, and moved it to the bottom to be less intrusive;
+- changed the content and appearance of the navigation bar, and moved it to the bottom of the screen to be less intrusive;
 - changed the behavior of the prev/next buttons slightly - the last mockup leads to the first and vice versa (this infinite looping can be undone by changing the variable "infinite" to "false" in the javascript)
-- Inline images instead of background images - no need to add height manually. Parent divs around the images are injected automatically with jquery. All centered without horizontal scrollbar, even when wider than the browser screen.
+- Use of inline images instead of background images - no need to add height manually. Parent divs around the images are injected automatically with jquery. All centered without horizontal scrollbar, even when wider than the browser screen.
 - Changed to html5 doc type, moved css and js to external files, etc.
 
 That's it, for now.
@@ -60,10 +60,10 @@ I'm Samuel Dellicour - I design web sites and turn them into html/css templates 
 
 I want to keep this a simple tool, but I think the following things would be useful:
 
-- change the browser url when clicking next / prev, so that a specific url/image can be bookmarked and/or sent...
-- ... and then when reaching that url, one would directly see that particular image (all this as an option)
-- abililty to see all images at once as clickable thumbnails (shouldn't be too hard if the images are already in the page)
+- Optionally change the browser url when clicking next / prev, so that a specific url/image can be bookmarked and/or sent...
+- ... and then when reaching that url, one would directly see that particular image;
+- Abililty to see all images at once as clickable thumbnails (shouldn't be too hard if the images are already in the page - or add separate thumbnails by hand, which can be cropped differently)
 - ~~Let jquery build the divs surrounding the images automatically on page load~~ Done
-- A script (python?) that takes all the images in a folder, and builds the mockup presentation, like other static gallery generators. May not be worth the effort...
+- A script (python?) that takes all the images in a folder, and builds the mockup presentation, like other static gallery generators. May not be worth the effort, as it is so easy to add the images...
 
 I'm no jquery wizard, so we'll see. Maybe with a little help of ... you ? 
