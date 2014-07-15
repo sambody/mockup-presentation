@@ -65,5 +65,7 @@ I want to keep this a simple tool, but I think the following things would be use
 - change the browser url when clicking next / prev, so that a specific url/image can be bookmarked and/or sent...
 - ... and then when reaching that url, one would directly see that particular image (all this as an option)
 - abililty to see all images at once as clickable thumbnails (shouldn't be too hard if the images are already in the page)
+- Let jquery build the divs surrounding the images automatically on page load (including setting the incrementing ids)
+- A script (python?) that takes all the images in a folder, and builds the mockup presentation, like other static gallery generators.
 
 I'm no jquery wizard, so we'll see. Maybe with a little help of ... you ? 
